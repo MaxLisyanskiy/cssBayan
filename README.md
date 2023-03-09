@@ -1,4 +1,6 @@
 # cssBayan
 rsschool task "cssBayan"
 
-https://github.com/DrDiman/CSS-Bayan-task
+**Task:** https://github.com/DrDiman/CSS-Bayan-task
+
+**Demo:** https://maxlisyanskiy.github.io/cssBayan/cssBayan/index.html
