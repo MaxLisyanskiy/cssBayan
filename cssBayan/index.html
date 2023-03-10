@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <main>
-        <section>
-            <h1>CSS Bayan</h1>
-        </section>
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <section class="container">
+                <h1>CSS Bayan</h1>
+                <div>
+                    <input id="acFirst" name="accordion" type="radio" checked />
+                    <label for="acFirst">Introducing Coercion</label>
+                    <article>
+                        <img src="./img/acFirst.png" alt="acFirst-img">
+                        <p>If you run 0 == "0" in your developer console, why does it return true?</p>
+                    </article>
+                </div>
+                <div>
+                    <input id="acSecond" name="accordion" type="radio" />
+                    <label for="acSecond">Arrays Get Coerced Too</label>
+                    <article>
+                        <img src="./img/acSecond.png" alt="acSecond-img">
+                        <p>Coercion again! I'll paraphrase the spec's relevant part:</p>
+                        <p>
+                            <q>If x is String or Number and y is Object, return x == ToPrimitive(y)</q>
+                        </p>
+                    </article>
+                </div>
+                <div>
+                    <input id="acThird" name="accordion" type="radio" />
+                    <label for="acThird">Quick Recap</label>
+                    <article>
+                        <img src="./img/acThird.png" alt="acThird-img">
+                        <p>Because coercion runs twice:</p>
+                        <ul>
+                            <li>ToPrimitive([]) gives empty string</li>
+                            <li>Then ToNumber("") gives 0.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div>
+                    <input id="acFourth" name="accordion" type="radio" />
+                    <label for="acFourth">FALSE!</label>
+                    <article>
+                        <img src="./img/acFourth.png" alt="acFourth-img">
+                        <p>"0" and "" are both strings, so JavaScript says no more coercion needed.</p>
+                        <p>This is why we get false.</p>
+                    </article>
+                </div>
+                <div>
+                    <input id="acFifth" name="accordion" type="radio" />
+                    <label for="acFifth">Conclusion</label>
+                    <article>
+                        <img src="./img/acFifth.jpg" alt="acFifth-img">
+                        <p>Thanks for watching!</p>
+                        <p>Plz like this repo and good luck to you!</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
