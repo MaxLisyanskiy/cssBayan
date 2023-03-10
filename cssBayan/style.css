@@ -1,0 +1,106 @@
+:root {
+    --text-color: #FF5833;
+    --text-color-active: #000000;
+}
+
+body {
+    font-family: 'Golos Text', sans-serif;
+    background-color: #f1f4fa;
+}
+
+.container {
+    max-width: 80em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.container
+
+.title {
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+
+/* */
+
+.acc {
+    margin: 0.5em 0;
+}
+
+.acc-label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8em 1.2em;
+    background-color: #fff;
+    border-radius: 0.8em;
+}
+
+.acc-label__wrapp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.acc-label__text {
+    font-size: small;
+    color: var(--text-color);
+    transition: all .2s ease;
+}
+
+.acc-label__icon {
+    width: 2em;
+}
+
+.acc__img {
+    width: 0;
+    height: 0;
+    border-radius: 0.8em;
+    transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -webkit-transition: all .25s ease-out;
+}
+
+/* *********** */
+
+input:checked ~ label .acc-label__text {
+    color: var(--text-color-active)
+}
+
+input:checked ~ label .acc-label__icon {
+    transform: rotate(45deg);
+}
+
+input:checked ~ label .acc__img {
+    width: 80%;
+    height: auto;
+    margin: 1em 0;
+}
+
+@media (min-width: 320px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 900px) {
+    .accordion:hover .acc-label__text{
+        color: var(--text-color-active)
+    }
+
+    .acc:hover .acc__img {
+        width: 80%;
+        height: auto;
+        margin: 1em 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
