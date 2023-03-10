@@ -79,7 +79,7 @@ body {
 
 /* actions */
 input:checked ~ label {
-    box-shadow: 0px 0px 4px rgb(204 204 204 / 60%);
+    box-shadow: 0px 0px 0.4em rgb(204 204 204 / 60%);
 }
 
 input:checked ~ label .acc-label__text {
