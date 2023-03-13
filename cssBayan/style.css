@@ -72,9 +72,9 @@ body {
     width: 0;
     height: 0;
     border-radius: 0.8em;
-    transition: all .25s ease-out;
-    -moz-transition: all .25s ease-out;
-    -webkit-transition: all .25s ease-out;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
 }
 
 
@@ -102,11 +102,11 @@ input:checked ~ label .acc__img {
 @media (min-width: 320px) {
 
     :root {
-        --text-size: 10px
+        --text-size: .8em
     }
 
     body {
-        font-size: 10px;
+        font-size: .8em;
     }
 
     .header__subtitle h3:first-child {
@@ -116,7 +116,7 @@ input:checked ~ label .acc__img {
 
 @media (min-width: 600px) {
     :root {
-        --text-size: 14px
+        --text-size: 1.2em
     }
 
     .header__subtitle h3:first-child {
@@ -130,7 +130,7 @@ input:checked ~ label .acc__img {
 
 @media (min-width: 1200px) {
     :root {
-        --text-size: 20px
+        --text-size: 1.6em
     }
 
     .header__subtitle h3:nth-child(2) {
